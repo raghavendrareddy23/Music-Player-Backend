@@ -16,6 +16,12 @@ app.use(cors());
 // Define your routes
 app.use(router);
 
+//dummy endpoint 
+app.get('/health', (req, res) => {
+  res.status(200).send('Server is healthy');
+});
+
+
 connectDB();
 
 restartServerJob.start();
