@@ -17,9 +17,9 @@ app.use(cors());
 app.use(router);
 
 //dummy endpoint 
-app.get('/health', (req, res) => {
-  res.status(200).send('Server is healthy');
-});
+// app.get('/health', (req, res) => {
+//   res.status(200).send('Server is healthy');
+// });
 
 
 connectDB();
